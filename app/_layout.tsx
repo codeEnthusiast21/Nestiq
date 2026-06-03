@@ -1,6 +1,7 @@
 import { Stack } from "expo-router";
 import { FlatList, Text, TextInput, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import "../global.css";
 
 
 
@@ -11,8 +12,8 @@ const properties=[
 ]
 export default function RootLayout() {
   return (
-    <SafeAreaView>
-    <View style = {{ padding:16 }}>
+    <SafeAreaView className="bg-white p-4 flex-1" >
+    <View className="text-lg font-bold text-gray-900">
       <Text>hehe</Text>
       <TextInput placeholder="Search city.."
       placeholderTextColor="#999"
